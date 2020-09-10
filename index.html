@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Dragos Andrew</title>
@@ -13,6 +8,32 @@
 	</head>
 	<body class="is-preload">
 			
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="173471053362914"
+  theme_color="#44bec7"
+  logged_in_greeting="Hei! Astept mesajul tau."
+  logged_out_greeting="Hei! Astept mesajul tau.">
+      </div>
 
 		<!-- Header -->
 			<div id="header">
@@ -142,7 +163,7 @@
 								<h2>Portofolio</h2>
 							</header>
 
-							<p>Records I have produced or co-produced throughout my career for several romanian and international artists.</p>
+							<p>Records I have produced or co-produced throughout my career for several romanian artists.</p>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
